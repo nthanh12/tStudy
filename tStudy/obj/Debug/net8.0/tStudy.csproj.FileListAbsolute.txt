@@ -8,6 +8,7 @@ C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\tStudy.pdb
 C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Azure.Core.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Azure.Identity.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Humanizer.dll
+C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -131,6 +132,7 @@ C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.AssemblyInfo.c
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.csproj.CoreCompileInputs.cache
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.sourcelink.json
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\staticwebassets\msbuild.tStudy.Microsoft.AspNetCore.StaticWebAssets.props
@@ -145,4 +147,3 @@ C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\refint\tStudy.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.pdb
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.genruntimeconfig.cache
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\ref\tStudy.dll
-C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.sourcelink.json
