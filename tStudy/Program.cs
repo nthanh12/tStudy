@@ -1,10 +1,21 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using tStudy.Application.Interfaces;
+using tStudy.Application.Services;
 using tStudy.Models.Data;
+using tStudy.Models.Entities;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDbContext<tStudyDbContext>( options => 
     options.UseSqlServer(builder.Configuration.GetConnectionString("tStudy")));
+
+builder.Services.AddIdentity<SystemUser, IdentityRole>()
+            .AddEntityFrameworkStores<tStudyDbContext>()
+            .AddDefaultTokenProviders();
+
+// ??ng ký AuthService
+builder.Services.AddScoped<IAuthService, AuthService>();
 
 // Add services to the container.
 

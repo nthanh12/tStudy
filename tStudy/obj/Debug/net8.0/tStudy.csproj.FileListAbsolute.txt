@@ -145,3 +145,4 @@ C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\refint\tStudy.dll
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.pdb
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.genruntimeconfig.cache
 C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\ref\tStudy.dll
+C:\Users\thanh\source\repos\tStudy\tStudy\obj\Debug\net8.0\tStudy.sourcelink.json
