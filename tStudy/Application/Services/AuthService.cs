@@ -23,7 +23,9 @@ namespace tStudy.Application.Services
             {
                 UserName = user.Username,
                 Email = user.Email,
-                Name = user.Name
+                Name = user.Name,
+                Phone = user.Phone,
+                Address = user.Address
             };
 
             // Đăng ký người dùng với mật khẩu
