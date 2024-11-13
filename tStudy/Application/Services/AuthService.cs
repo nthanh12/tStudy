@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.IdentityModel.Tokens;
+using System.Data;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Cryptography;
@@ -37,6 +38,12 @@ namespace tStudy.Application.Services
 
             // Đăng ký người dùng với mật khẩu
             var result = await _userManager.CreateAsync(systemUser, user.Password);
+
+            if (result.Succeeded)
+            {
+                // Gán role mặc định "User"
+                await _userManager.AddToRoleAsync(systemUser, "User");
+            }
 
             return new Response<IdentityResult>
             {
@@ -106,13 +113,19 @@ namespace tStudy.Application.Services
                     Data = new LoginResponseDTO()
                 };
             }
+            // Lấy các role của người dùng
+            var roles = await _userManager.GetRolesAsync(user);
+
             // Tạo các claim
-            var claims = new[]
+            var claims = new List<Claim>
             {
                 new Claim(JwtRegisteredClaimNames.Sub, user.Name),
                 new Claim(JwtRegisteredClaimNames.Email, user.Email),
                 new Claim(ClaimTypes.NameIdentifier, user.Id)
             };
+
+            // Thêm các role vào claims
+            claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
             // Tạo jwt token
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
